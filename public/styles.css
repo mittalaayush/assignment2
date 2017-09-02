@@ -1,0 +1,46 @@
+.breadthVertical {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.main{
+    margin:2px;padding : 4px; background-color:#ffffff ;position:absolute;left:30%;right:30%; height: auto; font-family: Arial}
+
+.titleDiv{
+    padding:2px; background-color:#ffffb0
+}
+
+.title{
+    position:relative;padding:2px; background-color:#ffffb0;text-align:center;
+}
+
+.active{
+    position: relative;padding:4px;margin-top: 40px;
+}
+
+.shiftRight
+{
+    position: relative; margin-left : 30px; padding: 4px;
+}
+
+.linebreak{
+    position:relative;height:2px;margin-top:10px; background-color:#000
+}
+.visibility{
+    font-size: 10px; float: right;text-decoration:underline;
+}
+.breadthHorizontal {
+    margin-left:5px;
+    margin-right:5px;
+}
+div.todoStatusACTIVE{
+    color : blue;
+}
+div.todoStatusCOMPLETE{
+    color : green;
+    text-decoration: line-through;
+}
+div.todoStatusDELETED{
+    color : red;
+    text-decoration: line-through;
+}

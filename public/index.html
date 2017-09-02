@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body bgcolor="#000000">
+
+<div class="main">
+
+    <div class="titleDiv">
+        <h2 class="title">My Todos</h2>
+    </div>
+
+    <div class = "active">
+        <label style = "font-weight: bold ">Active Todos</label>
+        <div class="shiftRight" id="active_todos_list_div"></div>
+    </div>
+
+    <div class="linebreak"></div>
+
+<div>
+    <div style="margin-left:10px;">
+        <h3 style="color:#bbb">Add Todo</h3>
+    </div>
+    <div class="shiftRight">
+<input  type="text" id="new_todo_input" placeholder="Todo Title Goes Here">
+<input style = "background-color: #0080ff" type="button" value="ADD" onclick="addTodoAJAX()"/>
+    </div>
+</div>
+
+    <div class = "linebreak"></div>
+
+    <div style="margin-top: 20px ">
+        <label><b>Completed Todos</b></label>
+        <label class="visibility" id = 'hide_complete' onclick="changeVisibility(this.id)">
+            Hide Complete Todos
+        </label>
+        <div class="shiftRight" id="complete_todos_list_div"></div>
+    </div>
+
+    <div class = "linebreak"></div>
+
+    <div style="margin-top: 20px">
+        <label><b>Deleted Todos</b></label>
+        <label class="visibility" id = 'hide_deleted' onclick="changeVisibility(this.id) ">
+            Hide Deleted Todos
+        </label>
+        <div class="shiftRight" id="deleted_todos_list_div"></div>
+    </div>
+
+</div>
+<script src="/script.js" type="text/javascript"></script>
+</body>
+</html>
